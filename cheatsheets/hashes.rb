@@ -4,7 +4,7 @@
 # =====  Initializing  =====
 # populated
 { 1 => 'one' , 2 => 'two' } # => {1=>"one", 2=>"two"}
-Hash[ 1,'one' , 2,'two' ]   # => {1=>"one", 2=>"two"}
+Hash[ 1,'one', 2,'2']   # => {1=>"one", 2=>"two"}
 
 # empty
 {}                          # => {}

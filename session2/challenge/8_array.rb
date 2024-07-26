@@ -5,3 +5,9 @@
 # got_three? ['a', 'a', 'b']  # => false
 # got_three? ['a', 'a', 'a']  # => true
 # got_three? [1, 2, 1, 1]     # => false
+
+def got_three?(arr)
+  flag = false
+  arr.each_cons(3) {|e| flag = true if e.uniq.length.eql? 1}
+  flag
+end
