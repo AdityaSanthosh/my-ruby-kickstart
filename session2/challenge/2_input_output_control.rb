@@ -19,7 +19,15 @@
 # and when you think it is correct, you can test it with  $ rake 2:2
 
 def hi_hi_goodbye
-  # your code here
+  system_prompt = "PROGRAM: Enter a number"
+  puts system_prompt
+  until (line = gets) && (line =~ /bye/)
+    puts "USER: #{line}"
+    line.strip.to_i.times {print 'hi '}
+    puts
+    puts system_prompt
+  end
+  p "PROGRAM: goodbye"
 end
 
 

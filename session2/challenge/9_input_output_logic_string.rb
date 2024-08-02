@@ -24,7 +24,9 @@
 # USER:     BYE
 
 def deaf_grandma
-
+  until (line = gets) && (line =~ /BYE/)
+    puts (line.strip.to_s.empty? || line.upcase != line) ? "HUH?! SPEAK UP, SONNY!" : "NO, NOT SINCE 1938!"
+  end
 end
 
 
